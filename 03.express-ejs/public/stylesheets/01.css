@@ -1,0 +1,614 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../../Desktop/img2/bgImg.png");
+}
+
+/*导航栏*/
+#wrap {
+    background-color: rgb(255,255,255);
+    height: 64px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#out {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+
+/*logo*/
+#logo {
+    position: absolute;
+    top: 12px;
+    left: 80px;
+}
+
+/*菜单栏*/
+#title1 {
+    position: absolute;
+    left: 300px;
+    background-color: rgb(251,251,251);
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 3px solid black;
+}
+.title a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#title2 {
+    position: absolute;
+    left: 370px;
+    /*background-color: rgb(251,251,251);*/
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+#title3 {
+    position: absolute;
+    left: 440px;
+    /*background-color: rgb(251,251,251);*/
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+#title4 {
+    position: absolute;
+    left: 510px;
+    /*background-color: rgb(251,251,251);*/
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+#title5 {
+    position: absolute;
+    left: 580px;
+    /*background-color: rgb(251,251,251);*/
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+/*鼠标悬停*/
+.title:hover {
+    background-color: rgb(251,251,251);
+}
+
+
+
+
+/*右侧*/
+#huabi {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    left: 1000px;
+    top: 10px;
+}
+#huabi img {
+    width: 100%;
+    height: 100%;
+}
+
+/*注册登录*/
+#login {
+    position: absolute;
+    left: 1060px;
+    top: 10px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(180,222,196);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+#login a {
+    color: rgb(180,222,196);
+    text-decoration: none;
+}
+
+#login:hover {
+    background-color: rgb(67,174,110);
+}
+
+#image {
+    width: 960px;
+    height: 480px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+
+#div1 {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    overflow: hidden;
+}
+#text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 480px;
+    height: 80px;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+}
+#text>div {
+    height: 1px;
+    width: 30px;
+    margin-top: 25px;
+    margin-left: 20px;
+    background-color: white;
+}
+#text p {
+    margin-top: 15px;
+    margin-left: 20px;
+    color: white;
+}
+#text p a {
+    text-decoration: none;
+    color: white;
+}
+
+#div1 img {
+    width: 100%;
+    height: 100%;
+}
+#div2 {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    left: 480px;
+    overflow: hidden;
+}
+#div2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#div3 {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 720px;
+    top: 0;
+    overflow: hidden;
+}
+#div3 img {
+    width: 100%;
+    height: 100%;
+}
+
+#div4 {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 480px;
+    top: 240px;
+    overflow: hidden;
+}
+#div4 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*图片缩放*/
+.scale img:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+.scale:hover .content{
+    display: block;
+}
+.scale:hover #text {
+    display: block;
+}
+.content {
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    top: 160px;
+    display: none;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.content div {
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.content p {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.content p a{
+    text-decoration: none;
+    color: white;
+}
+
+#div5 {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 240px;
+    left: 720px;
+    overflow: hidden;
+}
+#div5 img {
+    width: 100%;
+    height: 100%;
+}
+
+/*中间部分内容*/
+#middle-content {
+    width: 960px;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+}
+#black {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background-color: black;
+    display: inline-block;
+    margin-right: 10px;
+    top: 3px;
+}
+#read {
+    margin-left: 30px;
+    display: inline-block;
+}
+
+/*礼物*/
+.present {
+    width: 960px;
+    height: 215px;
+    background-color: white;
+    margin-top: 10px;
+}
+.introduce {
+    width: 660px;
+    height: 215px;
+    float: left;
+}
+.introduce-title {
+    margin-top: 24px;
+    margin-left: 20px;
+}
+.introduce-title a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.author {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.author a{
+    text-decoration: none;
+    color: black;
+}
+.henggang {
+    width: 30px;
+    height: 1px;
+    background-color: black;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+.paragraph {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    display: inline-block;
+}
+.paragraph a {
+    text-decoration: none;
+    color: rgb(120,196,157);
+}
+.paragraph img {
+    width: 6px;
+    height: 12px;
+}
+
+.review {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+/*右侧图片*/
+.picture {
+    width: 300px;
+    height: 215px;
+    float: right;
+}
+.picture img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*悬停*/
+.introduce-title a:hover {
+    color: rgb(87,174,110);
+}
+
+.author a:hover {
+    color: rgb(87,174,110);
+}
+
+/*ting*/
+#ting-content {
+    width: 960px;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+}
+#ting-black {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 3px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: black;
+}
+
+.tutu {
+    overflow: hidden;
+}
+#ting-content p {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#ting-matter {
+    width: 960px;
+    position: relative;
+    overflow: hidden;
+}
+.ting-tupian {
+    width: 300px;
+    height: 420px;
+    position: relative;
+    display: inline-block;
+}
+
+#first {
+    margin-right: 24px;
+}
+
+.song {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.song a {
+    text-decoration: none;
+    font-size: 25px;
+    /*color: rgb(61,174,110);*/
+    color: black;
+}
+.singer {
+    /*margin-top: 10px;*/
+    margin-left: 20px;
+}
+
+.singer a {
+    text-decoration: none;
+    font-size: 10px;
+    color: black;
+}
+.play-count {
+    /*display: inline-block;*/
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 10px;
+}
+
+/*蒙版*/
+.mark {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+}
+
+/*播放标志*/
+.play {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid white;
+    opacity: 0.3;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    margin-left: -40px;
+    display: none;
+}
+.action {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid white;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 138px;
+    left: 140px;
+    display: none;
+}
+
+#thirdly {
+    position: absolute;
+    top: 0;
+    left: 660px;
+}
+
+/*悬停*/
+.tutu img:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+.tutu:hover .mark {
+    display: block;
+}
+
+.tutu:hover .play {
+    display: block;
+}
+
+.tutu:hover .action {
+    display: block;
+}
+
+.song a:hover {
+    color: rgb(61,174,110);
+}
+
+.singer a:hover {
+    color: rgb(61,174,110);
+}
+
+
+/*人气片客*/
+#hot-pianker {
+    width: 960px;
+    margin: auto;
+    margin-top: 60px;
+}
+#hot-title {
+    width: 960px;
+    position: relative;
+}
+
+#hot-black {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 3px;
+    background-color: black;
+}
+
+#hot-title div {
+    display: inline-block;
+}
+#hot-title p {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#ranking {
+    width: 960px;
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+.ranking-list {
+    width: 230px;
+    height: 235px;
+    position: absolute;
+    top: 0;
+}
+
+#rank1 {
+    left: 0;
+}
+
+#rank2 {
+    left: 244px;
+}
+
+#rank3 {
+    left: 485px;
+}
+
+#rank4 {
+    left: 728px;
+}
+.ranking-list img {
+    width: 100%;
+    height: 100%;
+}
+
+.anchor {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+.anchor img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.intro {
+    position: absolute;
+    left: 120px;
+    top: 60px;
+}
+.intro div {
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+.geshou a {
+    text-decoration: none;
+    color: black;
+}
+
+.geshou a:hover {
+    color: rgb(61,174,110);
+}
+
+.music {
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    top: 125px;
+    left: 30px;
+}
+.music img {
+    width: 100%;
+    height: 100%;
+}
+
